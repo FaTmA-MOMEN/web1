@@ -165,9 +165,9 @@ body{
 }
 .product1{
     float: left;
-    margin: auto;
     margin: 130px  78px;
     text-align: center;
+    position: relative;
 }
 .probtn a{
     text-decoration: none;
@@ -181,28 +181,58 @@ body{
     background-color: rgb(253, 253, 253);
 }
 .probtn button:hover{
-    background-color: black;
+    background-color:rgb(9, 9, 9);
 }
 .probtn a:hover{
+    color: #f6f4f4;
+}
+.productlayer1{
+    position: absolute;
+    top:-15;
+    width: 300px;
+    height: 300px;
+    left: -40px;
+    background-color: rgba(0, 0, 0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    
+}
+.product1:hover   .productlayer1{
+    visibility: visible;
+    opacity: 1;
+}
+.productlayer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+.product2:hover  .productlayer{
+    visibility: visible;
+    opacity: 1;
+}
+.layerinfo{
     color: aliceblue;
+    margin-top: 40%;
+    line-height: 30px;
+}
+.layerinfo  p{
+    font-size: 20px;
 }
 .product2{
     float: left;
-    margin: auto;
     margin: 20px  40px;
     text-align: center;
+    position: relative;
 }
-.product3{
-    float: left;
-    margin: auto;
-    margin: -50px   30px;
-    text-align: center;
+.size{
+    font-size: 45px;
 }
-
-
-
-
-
 .backgroundoffer{
     width: 100%;
     height: 100vh;
@@ -535,38 +565,43 @@ background-color: rgb(0, 0, 0,0.5);
     font-size: 30px;
 }
 .end{
-    width: 100%;
-    height: 40vh;
+    height: 300px;
     background-color: rgba(128, 126, 126, 0.853);
-    position: relative;
+    padding: 60px 0;
+    text-align: center;
 }
 .endimg{
     position: absolute;
-    margin: 50px 43%;
+    margin: 0px 42%;
 }
 .endicon {
-     position: absolute;  
-    margin: 157px 42%;
-    font-size: 50px;
-    border-radius: 20px;
-    background-color: rgb(236, 240, 240);
-    width: 283px;
+    list-style: none;
+    margin: 20px 0px;
 }
-.endcopy{
-    position: absolute;
-    margin: 219px 38%;
-    width: 600px;
+.endicon li  {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(86, 161, 237);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 90px;
+    padding:15px  0;
 }
-.endicon a  {
-    color: rgb(97, 161, 238);
-    background-color: rgb(244, 247, 250);
-    border-radius: 80px;
-    /* width: 500px; */
+ .linkend  li  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    color: rgb(242, 243, 244);
+    font-size: 23px;
+    margin: 0  8px;
+    padding-right: 15px;
 }
-.kk{
-    
+.linkend li :hover{
+    opacity: 0.4;
 }
-
 
 
 
